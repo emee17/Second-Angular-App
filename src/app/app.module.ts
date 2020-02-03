@@ -4,13 +4,14 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { EmployeeServiceService } from './employee-service.service';
-import { EmployeeComponent } from './employee/employee.component';
+
 import { HttpClientModule } from '@angular/common/http';
+import { commonComponents } from './app-routing.module';
 
 @NgModule({
   declarations: [
     AppComponent,
-    EmployeeComponent
+    commonComponents
   ],
   imports: [
     BrowserModule,
